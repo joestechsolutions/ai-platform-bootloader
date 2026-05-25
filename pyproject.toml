@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "hermes-bootloader"
+version = "1.0.0"
+description = "Hermes Agent Infrastructure Bootloader"
+
+[tool.setuptools.packages.find]
+include = ["bootloader*"]
+
+[tool.setuptools.package-dir]
+bootloader = "."
